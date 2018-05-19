@@ -58,7 +58,7 @@ $(function() {
        });
     });
       
-    /
+ 
 	
 	 describe("Initial Entries", () => {
 
@@ -72,7 +72,7 @@ $(function() {
 		    it('loads atleast one element onto the page', function(done) {
             const feed = document.querySelector('.feed');
             const entries = feed.querySelectorAll('.entry');
-            expect(entries.length).toBe(>0);
+            expect(entries.length).toBeGreaterThan(0);
             done();
         });
 
